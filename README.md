@@ -1,12 +1,12 @@
-## 기획 의도
+## ‼️기획 의도
 
 ---
 
-## 프로젝트 Summary
+## 📝프로젝트 Summary
 
 ---
 
-## 앱 이미지
+## 📞앱 이미지
 
 ---
 
@@ -14,7 +14,20 @@
 
 ---
 
-## 개발 스택
+## 개발 환경
+#### 💻Python
+- 머신러닝 AI 모델 개발을 위한 프로그래밍 언어
+ 
+#### 📱Android Studio
+- SKT 연계 프로젝트로서, T전화 앱의 서비스 추가를 목표로 Android 개발 환경 채택
+- 프로그래밍 언어 Java
+
+#### 🖼️Figma
+- Android UI와 Color Chip 구상
+
+#### ☁️Azure Cloud
+- 클라이언트와 통신하기 위한 서버
+- 병렬화 가상머신 통한 모델 동작
 
 ---
 
@@ -87,7 +100,18 @@
 
 ---
 
-## 역할
+## 🧑‍💻역할
+**성시열**()
+
+**김지환**([https://github.com/hongju904](https://github.com/hongju904))
+- Android 앱 UI/UX 개발   
+([구현 내용](https://velog.io/@hongju904/VoiceKeeper-app-%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EB%A1%9D))
+- Cloud 서버와 Android 클라이언트 HTTP 통신
+- 
+
+**전민기**()
+
+**최형준**()
 
 ---
 
