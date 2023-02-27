@@ -1,12 +1,19 @@
 ## ‼️기획 의도
+자동 통화 녹음, 꺼야할까? 켜야할까?
+- 😊 통화 녹음의 장점: 보이스피싱, 협박, 괴롭힘 등 예상치 못한 상황에서 객관적 자료 확보
+- 😒 통화 녹음의 단점: 일상대화, 스팸 등 불필요한 통화 내용까지 모두 저장
+
+→ 쌓여가는 통화녹음, **필요한 통화녹음만** 저장할 수 있는 서비스 개발
 
 ---
 
 ## 📝프로젝트 Summary
+### AI 기반 음성 데이터를 통한 '통화 녹음 저장 판단' 시스템
 
 ---
 
 ## 📞앱 이미지
+![merge_from_ofoct](https://user-images.githubusercontent.com/74871378/221477298-cc9d97bc-b31a-4a6b-93f9-93aea51fe226.png)
 
 ---
 
@@ -14,7 +21,7 @@
 
 ---
 
-## 개발 환경
+## 🌐개발 환경
 #### 💻Python
 - 머신러닝 AI 모델 개발을 위한 프로그래밍 언어
  
@@ -104,10 +111,8 @@
 **성시열**()
 
 **김지환**([https://github.com/hongju904](https://github.com/hongju904))
-- Android 앱 UI/UX 개발   
-([구현 내용](https://velog.io/@hongju904/VoiceKeeper-app-%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EB%A1%9D))
+- Android 앱 UI/UX 개발 ([구현 내용](https://velog.io/@hongju904/VoiceKeeper-app-%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EB%A1%9D))
 - Cloud 서버와 Android 클라이언트 HTTP 통신
-- 
 
 **전민기**()
 
@@ -117,5 +122,4 @@
 
 ## 문제점 및 해결 내용
 
----
 
