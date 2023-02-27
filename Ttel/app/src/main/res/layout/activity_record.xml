@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--    맨 위 라인: 번호정보 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp">
+            <!--이미지-->
+            <ImageView
+                android:layout_span="1"
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:paddingBottom="10dp"
+                android:src="@mipmap/person_round">
+            </ImageView>
+            <!--        번호 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/callnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="phone"
+                    android:paddingTop="4dp"
+                    android:text="010-1111-2222"
+                    android:textStyle="bold"
+                    android:textSize="8pt" />
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="통화종료  |  "
+                            />
+                        <TextView
+                            android:id="@+id/min"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="01"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=":"
+                            />
+                        <TextView
+                            android:id="@+id/sec"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--    중앙 화면 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TableRow
+                    android:layout_margin="5dp">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="태그 저장"
+                        android:textColor="@color/blue"
+                        android:background="@drawable/rec_background"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_margin="5dp">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="이 번호 평가"
+                        android:textColor="@color/blue"
+                        android:background="@drawable/rec_background"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_margin="5dp">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="메모하기"
+                        android:textColor="@color/blue"
+                        android:background="@drawable/rec_background"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <!--    하단 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:src="@drawable/arrow_up"
+                    android:layout_weight="1"
+                    />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/recall"
+                    android:background="@color/white"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/calling_round"
+                    android:layout_weight="1"
+                    />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:src="@drawable/mail"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

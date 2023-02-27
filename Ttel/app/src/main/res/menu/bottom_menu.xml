@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/today"
+        android:enabled="true"
+        android:icon="@drawable/loyalty"
+        android:title="투데이"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/contact"
+        android:enabled="true"
+        android:icon="@drawable/person"
+        android:title="연락처"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/keypad"
+        android:enabled="true"
+        android:icon="@drawable/dial"
+        android:title="키패드"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/recent"
+        android:enabled="true"
+        android:icon="@drawable/time"
+        android:title="최근기록"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/option"
+        android:enabled="true"
+        android:icon="@drawable/t"
+        android:title="설정"
+        app:showAsAction="always"
+        />
+</menu>

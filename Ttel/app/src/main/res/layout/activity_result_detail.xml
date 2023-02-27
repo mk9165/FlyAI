@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultDetailActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/list_view_relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="6dp">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="7dp">
+        <ImageButton
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_icon"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:layout_gravity="right" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:src="@color/white"/>
+        <TextView
+            android:id="@+id/phoneNum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="전화번호"
+            android:gravity="center_vertical"
+            android:textSize="7pt"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menuimg"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+    </RelativeLayout>
+
+    <!--    두번째 라인: 배경      -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/gray"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_backgroud">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/vk_color"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="VoiceKeeper"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    android:textAlignment="center"
+                    android:gravity="center" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="통화분석결과"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="긍정" />
+                    <ProgressBar
+                        android:id="@+id/happy"
+                        android:max="100"
+                        android:progress="50"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:progressDrawable="@drawable/progressbar_happy"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/happypercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00%"
+                        android:gravity="right"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="분노" />
+                    <ProgressBar
+                        android:id="@+id/angry"
+                        android:max="100"
+                        android:progress="50"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:progressDrawable="@drawable/progressbar_angry"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/angrypercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00%"
+                        android:gravity="right"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="공포" />
+                    <ProgressBar
+                        android:id="@+id/fear"
+                        android:max="100"
+                        android:progress="50"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:progressDrawable="@drawable/progressbar_fear"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/fearpercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00%"
+                        android:gravity="right"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="슬픔" />
+                    <ProgressBar
+                        android:id="@+id/sad"
+                        android:max="100"
+                        android:progress="50"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:progressDrawable="@drawable/progressbar_sad"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/sadpercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00%"
+                        android:gravity="right"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/keyword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="#키워드 #키워드 #키워드"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:textAlignment="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:id="@+id/summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="여기에 요약 여기에 요약 여기에 요약 여기에 요약"
+                android:textAlignment="center"
+                android:paddingBottom="10dp"
+                />
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <!--    세번째 라인: 재생바     -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:thumb="@drawable/seekbar_seekbar1_thumb"
+            android:progressDrawable="@drawable/seekbar_seekbar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!--    하단: 버튼      -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_round_compare_arrows_24"
+            android:layout_weight="0"            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@color/white"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_round_replay_5_24"
+            android:layout_weight="0"            />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@drawable/play"
+            android:layout_weight="0"
+            />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_round_forward_5_24"
+            android:layout_weight="0"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@color/white"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:src="@drawable/x1"
+            android:layout_weight="0"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

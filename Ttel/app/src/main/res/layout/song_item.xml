@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/child_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="15dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/resulticon" />
+
+    <ImageView
+        android:id="@+id/album_Image"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/person_round" />
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="4"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="타이틀"
+            android:textStyle="bold"
+            android:gravity="bottom"
+            />
+        <TextView
+            android:id="@+id/txt_duration"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="재생길이"
+            android:textColor="@color/gray2"
+            android:gravity="top"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:src="@mipmap/calling_round"
+            >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txt_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="통화시각"
+            android:textSize="4pt"
+            android:textColor="@color/gray2"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

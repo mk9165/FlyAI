@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CallActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <!--    맨 위 라인: 번호정보 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp">
+            <!--이미지-->
+            <ImageView
+                android:layout_span="0"
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:paddingBottom="10dp"
+                android:src="@mipmap/person_round">
+            </ImageView>
+            <!--        번호 -->
+            <LinearLayout
+                android:layout_span="2"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/callnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="phone"
+                    android:paddingTop="4dp"
+                    android:text="010-1111-2222"
+                    android:textStyle="bold"
+                    android:textSize="8pt" />
+                <Chronometer
+                    android:id="@+id/stopwatch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray2">
+
+                </Chronometer>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/voicekeeper"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@color/white"/>
+
+        </LinearLayout>
+
+        <!--    두번째 라인: 배경 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/gray"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/call2"></ImageView>
+
+        </LinearLayout>
+
+        <!--    세번째 라인: 검색창-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <EditText
+                android:ems="100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_backgroud"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:text="  메세지 입력/확인"
+                android:textColor="@color/gray2"
+                android:drawableEnd="@drawable/mail"
+                android:textSize="6pt"
+                >
+            </EditText>
+        </LinearLayout>
+
+        <!--    네번째 라인: 아이콘 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:background="@color/white"
+                    android:layout_gravity="center"
+                    android:src="@drawable/speaker"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:background="@color/white"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_round_bluetooth_24"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:background="@color/white"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_round_app_registration_24"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:background="@color/white"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_voicemail_24"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--    다섯번째 라인: 텍스트 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:text="스피커"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:text="블루투스"
+                    android:paddingBottom="15dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_span="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:text="키패드"
+                    android:paddingBottom="15dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/recordText"
+                    android:layout_span="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:text="녹음"
+                    android:paddingBottom="15dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--    마지막 라인: 전화끊기 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:scaleType="fitCenter"
+                android:id="@+id/endcalling"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/endcall_round"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

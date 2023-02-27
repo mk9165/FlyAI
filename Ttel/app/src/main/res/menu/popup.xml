@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_menu1"
+        android:title="최근기록 삭제" />
+    <item
+        android:id="@+id/action_menu2"
+        android:title="최근기록 보기 설정" />
+    <item
+        android:id="@+id/action_menu3"
+        android:title="최근 통화 평가" />
+    <item
+        android:id="@+id/action_menu4"
+        android:title="통화녹음 목록" />
+
+</menu>
