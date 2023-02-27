@@ -18,6 +18,7 @@
 ---
 
 ## 개발 프레임워크
+![image](https://user-images.githubusercontent.com/71757818/221478426-f6a518d6-5449-4ea2-82df-d56e737db08e.png)
 
 ---
 
@@ -114,12 +115,15 @@
 - Android 앱 UI/UX 개발 ([구현 내용](https://velog.io/@hongju904/VoiceKeeper-app-%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EB%A1%9D))
 - Cloud 서버와 Android 클라이언트 HTTP 통신
 
-**전민기**()
+**전민기**(https://github.com/mk9165)
+- 텍스트 감성 분류 모델
+- 대화 요약, 키워드 추출
 
 **최형준**()
 
 ---
 
 ## 문제점 및 해결 내용
+
 
 
