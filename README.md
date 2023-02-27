@@ -39,14 +39,31 @@
 
 ---
 
-## ⚡감정 분석 모델
-▶ 음성 특성 추출
+## ⚡감정 분류 모델
+▶ 음성 감정 분류
 
-▶ Spectrogram
+✔ 음성 특성 추출
 
-▶ Wav2vec2.0
+✔ Spectrogram
 
-▶ BERT
+✔ wav2vec2.0
+
+- Positive와 Angry 잘 분류
+- Accuracy: 0.75
+
+▶ 텍스트 감정 분류
+
+✔ BERT
+- 앞 뒤 문맥을 모두 고려할 수 있는 양방향 Encoder 구조
+- WordPeice 토크나이저를 subword 식별 → 신조어, 일상어 식별↑
+- Positive와 Fear 잘 분류
+- Accuracy: 0.76
+
+▶ 음성 + 텍스트 멀티 모달 
+
+✔ wav2vec2.0 + BERT
+- 모델 각각의 잘 감지하는 감정에 따라 가중치 부여
+- Accuracy: 0.82
 
 ---
 
